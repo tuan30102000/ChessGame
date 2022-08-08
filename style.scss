@@ -1,0 +1,28 @@
+:root {
+    --width-chess-item: 70px;
+}
+ul {
+    padding: 0;
+    margin: 0;
+}
+li {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+#board {
+    margin: auto;
+    width: calc(var(--width-chess-item) * 8);
+    height: calc(var(--width-chess-item) * 8);
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(8, 1fr);
+    border: 1px solid black;
+}
+.black {
+    background-color: #000;
+}
+.white {
+    background-color: #fff;
+}
